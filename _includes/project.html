@@ -1,0 +1,46 @@
+<div id="project-modal" class="modal fade">
+  <div class="modal-dialog modal-dialog-vertical-center" role="document">
+    <div class="modal-content bd-0 tx-14">
+      <div class="modal-header pd-y-20 pd-x-25">
+        <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Project details configuration</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pd-25 form-layout form-layout-4">
+          <p class="mg-b-20 mg-sm-b-30">Configure your project.</p>
+          <div class="row mg-t-20">
+            <label class="col-sm-4 form-control-label">
+              Ground Surface
+              <span class="tx-danger">*</span>
+            </label>
+            <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+              <input type="text" class="form-control" v-model="project_ground_surface">
+            </div>
+          </div>
+          <div class="row mg-t-20">
+            <label class="col-sm-4 form-control-label">
+              Home Ground Surface
+              <span class="tx-danger">*</span>
+            </label>
+            <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+              <input type="text" class="form-control" v-model="project_home_ground_surface"  >
+            </div>
+          </div>
+          <div class="row mg-t-20">
+            <label class="col-sm-4 form-control-label">
+              Home Total Ground Surface
+              <span class="tx-danger">*</span>
+            </label>
+            <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+              <input type="text" class="form-control" v-model="project_home_total_ground_surface"  >
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary pd-x-20" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
